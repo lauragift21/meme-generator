@@ -1,0 +1,127 @@
+/* Default styles */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font: 1rem sans-serif;
+}
+
+/* App */
+.App {
+  text-align: center;
+}
+
+/* Content */
+.content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+img {
+  max-width: 520px;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+}
+
+h1,
+h2 {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  /* text-shadow: 0px 0px 2px black; */
+  -webkit-text-stroke: 3px black;
+  line-height: 1;
+}
+
+h1 {
+  top: 16px;
+}
+
+h2 {
+  bottom: 32px;
+}
+
+/* Form */
+.form {
+  margin: 0 auto;
+  max-width: 380px;
+}
+
+.form__inputs,
+.form__btns {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.form__inputs {
+  margin-bottom: 12px;
+}
+
+.form__inputs input,
+.form__btns .btn  {
+  border-radius: 2px;
+}
+
+.form__inputs input {
+  padding: 8px;
+  width: 100%;
+  max-width: 50%;
+  border: 1px solid #ccc;
+}
+
+.form__inputs input:focus {
+  outline-color: #0984e3;
+}
+
+.form__inputs input + input,
+.form__btns .btn + .btn {
+  margin-left: 12px;
+}
+
+.form__btns {
+  justify-content: center;
+}
+
+.form__btns .btn {
+  padding: 8px 12px;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  transition: background .25s ease-in-out;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #0984e3;
+}
+
+.btn-primary:hover {
+  background: #0767b2;
+}
+
+.btn-danger {
+  background: #d63031;
+}
+
+.btn-danger:hover {
+  background: #b02324;
+}
