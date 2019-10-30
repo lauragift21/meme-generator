@@ -21,7 +21,7 @@ const Form = (props: FormInterface) => {
         <input
           name="text-top"
           type="text"
-          // placeholder="Text Top"
+          placeholder="Text Top"
           value={props.textTop}
           onChange={props.handleInputChange}
         />
@@ -69,13 +69,13 @@ const Form = (props: FormInterface) => {
         </button>
 
         {/* button to remove image from the DOM */}
-        <button
+        {props.isMemeGenerated && <button
           className="btn btn-danger"
           type="button"
           onClick={props.handleMemeReset}
         >
           Reset
-        </button>
+        </button>}
       </div>
     </div>
   )

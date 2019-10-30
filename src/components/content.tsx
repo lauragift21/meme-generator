@@ -10,7 +10,7 @@ interface ContentInterface {
 
 const Content = (props: ContentInterface) => {
   return (
-    <div className="content">
+    <div className="content" ref={props.contentContainerRef}>
     {/* Image Preview */}
       <img src={props.activeImage} alt="Meme"/>
       {/* Top Text */}
