@@ -48,7 +48,6 @@ function handleInputChange(event) {
 function handleImageChange() {
   // Choose random image
   const image = images[Math.floor(Math.random() * images.length)]
-
   // Update activeImage state
   setActiveImage(image.url)
 }
